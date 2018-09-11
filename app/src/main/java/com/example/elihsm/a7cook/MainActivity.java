@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(List<Banner> banners) {
                 RecyclerView bannerRv=findViewById(R.id.rv_main_slider);
                 bannerRv.setNestedScrollingEnabled(false);
+
                 bannerRv.setLayoutManager(new LinearLayoutManager(MainActivity.this,LinearLayoutManager.HORIZONTAL,false));
                 bannerRv.setAdapter(new BannerAdapter(banners));
                 SnapHelper snapHelper=new PagerSnapHelper();
