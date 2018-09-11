@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 snapHelper.attachToRecyclerView(bannerRv);
             }
         });
+        //issue fixed
 
     }
 }
